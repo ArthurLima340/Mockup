@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produto teste</title>
+</head>
+<body>
+    <style>
+        /* Imagem de fundo */
+        body {
+            padding: 0;
+            margin: 0;
+            height: 600px;
+            background: url(spice2.jpg) no-repeat;
+            background-size: cover;
+        }
+        /***************************************** Cabeçalho *****************************************/
+        header {
+            background-color: brown;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            align-items: center;
+        }
+        .logo {
+            position: relative;
+            left: 5px;
+        }
+        /* Texto "buscar" */
+        .top-buscar {
+            display: flex;
+            align-items: center;
+        }
+        /* Lupa */
+        .btn-lupa-top {
+            background-color: transparent;
+            border: 0;
+            position: relative;
+            left: 35px;
+        }
+        /* X da barra de pesquisa */
+        .btn-x-top {
+            background: transparent;
+            font-size: larger;
+            position: relative;
+            right: 23px;
+            top: 2px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        /* Barra de pesquisa */
+        .btn-texto {
+            padding: 6px;
+            width: 250px;
+            border: none;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        /* Botão de filtrar */
+        .filtro {
+            color: white;
+            background-color: darkred;
+            width: 80px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        /* Posição da bolsa */
+        .img- {
+            background-color: transparent;
+            position: relative;
+            left: 62%;
+        }
+        /* Posição do perfil */
+        .img-- {
+            position: relative;
+            left: 58%;
+        }
+        #continentes {
+            display: none;
+            padding: 10px;
+            position: relative;
+            top: 40px;
+            width: 100%;
+            height: 110px;
+            background-color: darkred;
+            border: 2px solid black;
+            color: white;
+            position: absolute;
+            z-index: 1;
+            
+        }
+        .paises {
+            display: flex;
+            gap: 130px;
+            color: white;
+        }
+        a {
+            color: white;
+            text-decoration: dotted;
+        }
+        /* .produto{
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        } */
+        .pai {
+            width: 336px;
+            height: 336px;
+            background-color: brown;
+            position: relative;
+            top: 150px;
+            left: 110px
+        }
+
+        .filho {
+            width: 316px;
+            height: 316px;
+            background: url(paprica_pó2.jpg) no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .descricao_produto{
+            display: flex;
+            gap: 130px;
+            color: white;
+            display: flex;
+        }
+    </style>
+    <Header>
+        <a href="" class="logo"><img src="logo.png" width="48px" alt=""></a>
+        <form class="top-buscar" action="">
+            <button class="btn-lupa-top" type="submit"><img src="lupa.png" alt="" width="20px"></button>
+            <input class="btn-texto" type="text" placeholder="Buscar">
+            <button class="btn-x-top" type="reset"><img src="icons8-x-30.png" width="15px" alt=""></button>
+        </form>
+        <button class="filtro" onclick="filtrar()">
+            <img src="filtro.png" alt="" width="20px">
+            <p>
+            <h4>filtrar</h4>
+            </p>
+        </button>
+        <a href="" class="img-"><img src="bolsa.png" width="25px" alt=""></a>
+        <a href="autenticação.html" class="img--"><img src="user.png" width="23px" alt=""></a>
+        </div>
+    </Header>
+    <div id="continentes">
+        <h3>Continentes:</h3>
+        <div class="paises">
+            <a href="" alt="">
+                <p>África </p>
+            </a>
+            <a href="">
+                <p>América do sul</p>
+            </a> 
+            <a href="">
+                <p>América do norte</p>
+            </a> 
+            <a href="">
+                <p>América central</p>
+            </a> 
+            <a href="">
+                <p>Ásia</p>
+            </a> 
+            <a href="">
+                <p>Europa</p>
+            </a> 
+            <a href="">
+                <p>Oceania</p>
+            </a>
+        </div>
+    </div>
+    <div class="pai">
+        <div class="filho"></div>
+    </div>
+    <form class="descricao_produto">Páprica Picante</form>
+     <script>
+        function filtrar (){
+        const div_esconder = document.getElementById('continentes')
+        if (div_esconder.style.display ==="block" ){
+            div_esconder.style.display ="none"
+        }else{
+            div_esconder.style.display ="block"
+        }
+        }
+    </script>
+</body>
+</html>
