@@ -1,0 +1,261 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: url(spice2.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  overflow-x: hidden;
+}
+
+.slide {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  grid-template-rows: 220px 20px;
+  grid-template-columns: 1fr 30px 30px 30px 1fr;
+}
+          /* ******************************** CABEÇALHO ******************************** */
+
+header {
+  background-color: brown;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+          /* ******************************** LOGO ******************************** */
+
+.logo {
+  position: relative;
+  left: 5px;
+}
+
+          /* ******************************** CAIXA DE TEXTO ******************************** */
+
+.top-buscar {
+  display: flex;
+  align-items: center;
+}
+
+          /* ******************************** LUPA ******************************** */
+
+.btn-lupa-top {
+  background-color: transparent;
+  width: 20px;
+  height: 22px;
+  border: 0;
+  position: relative;
+  left: 25px;
+}
+
+          /* ******************************** X ******************************** */
+
+.btn-x-top {
+  background: transparent;
+  position: relative;
+  right: 23px;
+  top: 2px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+          /* ******************************** TEXTO ******************************** */
+
+.btn-texto {
+  padding: 6px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+          /* ******************************** FILTRO ******************************** */
+
+.filtro{
+  display: flex;
+  align-items: center;
+  color: white;
+  background: transparent;
+  width: 80px;
+  height: 30px;
+  font-family: verdana;
+}
+#continentes {
+  display: none;
+  top: 40px;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: darkred;
+  border: 2px solid black;
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+          /* ******************************** CLASS FILTRO ******************************** */
+.class-filtro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.class-filtro a{
+  color: white;
+  text-decoration: dotted;
+}
+
+          /* ******************************** BOLSA ******************************** */
+
+.img- { 
+  position: relative;
+  left: 62%;
+
+}
+
+          /* ******************************** USER ******************************** */
+
+.img-- {
+  position: relative;
+  left: 58%;
+}
+
+          /* ******************************** PERFIL ******************************** */
+
+.historico{
+  background-color: #C43030;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.historico p{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+          /* ******************************** HISTORICO ******************************** */
+
+  .history-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 250px;
+  }
+  
+  
+  hr {
+    color: #b4b3b3;
+  }
+  
+  .search__icon-background {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 0 5px;
+  }
+  
+  .search__icon {
+    color: #000;
+    font-size: 25px;
+  }
+  
+  
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+  
+  .purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(43, 43, 43, 0.616);
+    border-width: 3px; 
+    border-style: solid; 
+    border-color:  rgba(37, 37, 43, 0.623); 
+  }
+  
+  .purchase__icon-background {
+    align-self: center;
+    margin: 10px;
+    border-radius: 35px;
+    display: flex;
+    background-color: #c0df85;
+  }
+  
+  .purchase__icon {
+    padding: 10px;
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .purchase__info {
+    margin: auto 0;
+  }
+  
+  .purchase__title,
+  .purchase__date {
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  .purchase__date {
+    padding: 3px 0 10px 0;
+    font-size: small;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .purchase__price {
+    align-self: center;
+    margin-left: auto;
+    color: chartreuse;
+  }
+  
+  .purchase__details-btn {
+    background-color: #fff;
+    padding: 3px 10px;
+    border: solid 1px #000;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .purchase__details-btn:hover {
+    background-color: #ffffff00;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #c0df85;
+  }
+  
+  @media (min-width: 750px) {
+    .history-page {
+      width: 750px;
+    }
+  }
+  
+  .user-cart-icons {
+    display: flex;
+    align-items: center;
+  }
+  

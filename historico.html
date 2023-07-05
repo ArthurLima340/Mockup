@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="historico.css" />
+</head>
+
+<body>
+
+  <!-- ******************************** CABEÇALHO ******************************** -->
+
+  <header>
+    <a href="" class="logo"><img src="logo.png" width="40px" alt=""></a> <!-- LOGO -->
+    <form class="top-buscar" action=""> <!-- CAIXA DE TEXTO -->
+        <button class="btn-lupa-top" type="submit"><img src="lupa.png" alt="" width="20px"></button> <!-- LUPA -->
+        <input class="btn-texto" type="text" placeholder="Buscar"> <!-- TEXTO -->
+        <button class="btn-x-top" type="reset"><img src="x.png" alt="" width="15px"></button> <!-- X -->
+    </form>
+    <button onclick="filtrar()" class="filtro">
+        <img src="filtro.png" alt="" width="20px">
+        <p>filtrar</p>
+    </button>
+
+    <a href="" class="img-"><img src="bolsa.png" width="25px" alt=""></a> <!-- BOLSA -->
+    <a href="cidades.html" class="img--"><img src="user.png" width="23px" alt=""></a> <!-- USER -->
+    </div>
+</header>
+
+<div id="continentes">
+  <h3>Continentes:</h3>
+  <div class="class-filtro">
+      <a href="" alt="">
+          <p>África </p>
+      </a>
+      <a href="" alt="">
+          <p>América do sul</p>
+      </a>
+      <a href="" alt="">
+          <p>América do norte</p>
+      </a>
+      <a href="" alt="">
+          <p>América central</p>
+      </a>
+      <a href="" alt="">
+          <p>Ásia</p>
+      </a>
+      <a href="" alt="">
+          <p>Europa</p>
+      </a>
+      <a href="" alt="">
+          <p>Oceania</p>
+      </a>
+  </div>
+</div>
+
+<div class="historico">
+  <p>Histórico:</p>
+</div>
+  <div class="history-page">
+        <span class="iconify search__icon" data-inline="false" data-icon="ant-design:search-outlined"></span>
+    <div class="history-page__purchases"></div>
+  </div>
+  <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+  <script src="historico.js"></script>
+  <script>      
+    function filtrar (){
+    const div_esconder = document.getElementById('continentes')
+    if (div_esconder.style.display ==="block" ){
+        div_esconder.style.display ="none"
+    }else{
+        div_esconder.style.display ="block"
+    }
+    }</script>
+</body>
+
+</html>
