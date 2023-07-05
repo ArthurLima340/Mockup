@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `carinho` (
   `id_carrinho` int NOT NULL,
   `id_usuario` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `carinho`
@@ -51,7 +51,7 @@ CREATE TABLE `carinho_itens` (
   `id_produto` int NOT NULL,
   `id_carrinho` int NOT NULL,
   `quantidade` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `carinho_itens`
@@ -74,7 +74,7 @@ CREATE TABLE `entrega` (
   `rua` varchar(50) NOT NULL,
   `numero` int NOT NULL,
   `complemento` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `entrega`
@@ -95,7 +95,7 @@ CREATE TABLE `pedidos` (
   `valor_pedido` decimal(10,2) NOT NULL,
   `status` int NOT NULL,
   `id_entrega` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `pedidos`
@@ -126,7 +126,7 @@ CREATE TABLE `pedido_produto` (
   `id_produto` int NOT NULL,
   `Quantidade` int NOT NULL,
   `valor_atual_produto` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `pedido_produto`
@@ -168,7 +168,7 @@ CREATE TABLE `produtos` (
   `valor` decimal(10,2) NOT NULL,
   `Continente` text NOT NULL,
   `Quantidade em g` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `produtos`
@@ -209,7 +209,7 @@ CREATE TABLE `usuario` (
   `CEP` varchar(8) NOT NULL,
   `Endereço` varchar(150) NOT NULL,
   `complemento` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=;
 
 --
 -- Extraindo dados da tabela `usuario`
