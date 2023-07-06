@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Favoritos</title>
 </head>
 
 
@@ -171,16 +171,16 @@
                 <div class="preço"><h3>R$18,50</h3></div>
             </div>
             <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <img src="cravo.png" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Cravo em pó</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$03,45</h3></div>
             </div>
             <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt=""> 
+                <img src="canela.png" width="130px" alt=""> 
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Canela em pó</h2><h6>500g</h6></div>
+                <div class="preço"><h3>R$16,13</h3></div>
             </div>
             
         </div>
@@ -188,14 +188,14 @@
             <div class="produto">
                 <img src="pimenta dedo de moça.jpg" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Pimenta Dedo de Moça</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$09,99</h3></div>
             </div>
             <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <img src="alho.png" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Alho em pó</h2><h6>500g</h6></div>
+                <div class="preço"><h3>R$05,60</h3></div>
             </div>
             
         </div>
@@ -203,14 +203,14 @@
             <div class="produto">
                 <img src="pimenta do reino.webp" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Pimenta do Reino</h2><h6>500g</h6></div>
+                <div class="preço"><h3>R$07,95</h3></div>
             </div>
             <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <img src="Açafrão.png" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
+                <div class="nome"><h2>Açafrão em pó</h2><h6>500g</h6></div>
+                <div class="preço"><h3>R$12,35</h3></div>
             </div>
             
         </div>
