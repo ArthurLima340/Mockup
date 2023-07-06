@@ -12,26 +12,19 @@
 
 <body>
     <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-
-        body {
+/* Imagem de fundo */
+body {
             padding: 0;
             margin: 0;
             background: url(spice2.jpg) no-repeat;
             background-size: cover;
             overflow-x: hidden;
-            margin-top: 40px;
+            margin-top: 50px;
             justify-content: center;
             width: 100%;
         }
 
-
+        /***************************************** Cabeçalho *****************************************/
         header {
             background-color: brown;
             width: 100%;
@@ -42,26 +35,20 @@
             z-index: 1;
         }
 
-
+        /* Manter as coisas no lugar certo */
         .element-header {
             width: 100%;
             display: flex;
             align-items: center;
         }
 
-
-        .element-header img {
-            margin: 0px 0px -5px 5px;
-            outline: none;
-        }
-
-
+        /* Texto "buscar" */
         .top-buscar {
             display: flex;
             align-items: center;
         }
 
-
+        /* Lupa */
         .btn-lupa-top {
             border: 0;
             position: relative;
@@ -70,7 +57,7 @@
             background: transparent;
         }
 
-
+        /* X da barra de pesquisa */
         .btn-x-top {
             background: transparent;
             font-size: larger;
@@ -82,7 +69,7 @@
             border: 0;
         }
 
-
+        /* Barra de pesquisa */
         .btn-texto {
             padding: 6px;
             width: 250px;
@@ -93,6 +80,7 @@
             padding-left: 35px;
             padding-right: 35px;
         }
+        /* Botão de filtrar */
         .filtro {
             color: white;
             background-color: darkred;
@@ -101,29 +89,19 @@
             display: flex;
             align-items: center;
         }
+         /* Posição da bolsa */
         .img- {
             position: relative;
             left: 57%;
         }
-        .produto {
-            width: 410px;
-            height: 150px;
-            border: 2px solid black;
-            margin: 5px;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.158); 
-        }
-        .all{
-            display: flex;
-            margin-top: 10px;
-            justify-content: center;
-        }
+        /* Titulo */
         .sobre_nos{
             color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        /* Caixa de texto */
         .texto{
             margin-left: 200px;
             margin-right: 200px;
@@ -131,7 +109,7 @@
             border-radius: 20px;
             padding: 10px;
         }
-
+        /* Texto */
         p{
             font-family: 'Times New Roman', Times, serif;
             color: beige;
@@ -140,12 +118,14 @@
             margin: 0;
             margin-top: 3px;
         }
+        /* Posição do titulo */
         h2{
             text-align: center;
             font-size: 40px;
         }
     </style>
     <Header>
+        <!-- Cabeçalho -->
         <div class="element-header">
             <a href=""><img src="logo.png" width="55px" alt=""></a>
             <form class="top-buscar" action="">
@@ -160,9 +140,11 @@
             <a href="cidades.html" class="img-"><img src="user.png" width="30px" alt=""></a>
         </div>
     </Header>
+    <!-- Titulo -->
     <div class="sobre_nos">
         <h2>Sobre nós</h2></div>
     <br>
+    <!-- Texto -->
     <div class="texto">
         <p>Bem-vindo ao nosso e-commerce de especiarias! Apaixonados por sabor e aroma, acreditamos no poder das especiarias para transformar qualquer prato em uma experiência culinária única. <br>
         Nosso objetivo é oferecer uma ampla gama de especiarias de alta qualidade cuidadosamente selecionadas de diferentes partes do mundo. Trabalhamos diretamente com produtores locais para obter ingredientes frescos e autênticos para garantir que você obtenha o melhor sabor em sua cozinha. <br>
@@ -173,71 +155,8 @@
         Agradecemos por escolher nossa loja e esperamos que você desfrute dos nossos temperos tanto quanto nós. Explore os sabores, experimente novas combinações e embarque em uma jornada culinária inesquecível! <br>
         Atenciosamente, Equipe do Temperos Mundiais.</p>
     </div>
-    <!-- <div class="all">
-        <div>
-            <div class="produto">
-                <img src="oregano.jfif" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt=""> 
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            
-        </div>
-        <div>
-            <div class="produto">
-                <img src="pimenta dedo de moça.jpg" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            
-        </div>
-        <div>
-            <div class="produto">
-                <img src="pimenta do reino.webp" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            <div class="produto">
-                <img src="icone-d-image-violet.png" width="130px" alt="">
-                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
-                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
-                <div class="preço"><h3>R$18,50</h3></div>
-            </div>
-            
-        </div>
-    </div> -->
+    
 </body>
 
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
