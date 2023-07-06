@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+</head>
+
+
+<body>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: url(spice2.jpg) no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            margin-top: 40px;
+            justify-content: center;
+            width: 100%;
+        }
+
+
+        header {
+            background-color: brown;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+
+        .element-header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .element-header img {
+            margin: 0px 0px -5px 5px;
+            outline: none;
+        }
+
+
+        .top-buscar {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .btn-lupa-top {
+            border: 0;
+            position: relative;
+            left: 30px;
+            bottom: 3px;
+            background: transparent;
+        }
+
+
+        .btn-x-top {
+            background: transparent;
+            font-size: larger;
+            position: relative;
+            right: 30px;
+            bottom: 3px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+
+        .btn-texto {
+            padding: 6px;
+            width: 250px;
+            border: none;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        .filtro {
+            color: white;
+            background-color: darkred;
+            width: 80px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .img- {
+            position: relative;
+            left: 57%;
+        }
+        .produto {
+            width: 410px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.158); 
+        }
+        .all{
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .sobre_nos{
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .texto{
+            margin-left: 200px;
+            margin-right: 200px;
+            background-color: brown;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            color: beige;
+            text-align: center;
+            font-size: 20px;
+            margin: 0;
+            margin-top: 3px;
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+    <Header>
+        <div class="element-header">
+            <a href=""><img src="logo.png" width="55px" alt=""></a>
+            <form class="top-buscar" action="">
+                <button class="btn-lupa-top" type="submit"><img src="lupa.png" width="15px" alt=""></button>
+                <input class="btn-texto" type="text" placeholder="Buscar">
+                <button class="btn-x-top" type="reset"><img src="icons8-x-30.png" width="15px" alt=""></button>
+            </form>
+            <button class="filtro">
+                <img src="filtro.png" alt="" width="20px"><p><h4>filtrar</h4></p>
+            </button>
+            <a href="" class="img-"><img src="bolsa.png" width="35px" alt=""></a>
+            <a href="cidades.html" class="img-"><img src="user.png" width="30px" alt=""></a>
+        </div>
+    </Header>
+    <div class="sobre_nos">
+        <h2>Sobre nós</h2></div>
+    <br>
+    <div class="texto">
+        <p>Bem-vindo ao nosso e-commerce de especiarias! Apaixonados por sabor e aroma, acreditamos no poder das especiarias para transformar qualquer prato em uma experiência culinária única. <br>
+        Nosso objetivo é oferecer uma ampla gama de especiarias de alta qualidade cuidadosamente selecionadas de diferentes partes do mundo. Trabalhamos diretamente com produtores locais para obter ingredientes frescos e autênticos para garantir que você obtenha o melhor sabor em sua cozinha. <br>
+        Prezamos pela qualidade e procedência de nossos produtos. Cada tempero de nosso catálogo foi criteriosamente selecionado considerando sua origem, pureza e potencial para agregar um sabor único aos pratos. <br>
+        Além da paixão por temperos, nos preocupamos com a satisfação de nossos clientes. Queremos tornar sua experiência de compra fácil, conveniente e agradável. Navegue em nossa loja online, onde você encontrará descrições detalhadas de cada tempero, dicas de como usá-lo e sugestões de combinações de sabores. <br>
+        Acreditamos que cozinhar é uma forma de expressão e um convite a explorar novos horizontes gastronômicos. Queremos ser o seu parceiro nesta viagem, proporcionando-lhe os melhores temperos para que crie pratos memoráveis, cheios de carácter e sabor. <br>
+        Seja você um chef experiente ou alguém que está apenas começando a explorar o mundo culinário. Estamos empenhados em fornecer produtos de qualidade, excelente serviço e uma experiência de compra única. <br>
+        Agradecemos por escolher nossa loja e esperamos que você desfrute dos nossos temperos tanto quanto nós. Explore os sabores, experimente novas combinações e embarque em uma jornada culinária inesquecível! <br>
+        Atenciosamente, Equipe do Temperos Mundiais.</p>
+    </div>
+    <!-- <div class="all">
+        <div>
+            <div class="produto">
+                <img src="oregano.jfif" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            <div class="produto">
+                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            <div class="produto">
+                <img src="icone-d-image-violet.png" width="130px" alt=""> 
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            
+        </div>
+        <div>
+            <div class="produto">
+                <img src="pimenta dedo de moça.jpg" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            <div class="produto">
+                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            
+        </div>
+        <div>
+            <div class="produto">
+                <img src="pimenta do reino.webp" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            <div class="produto">
+                <img src="icone-d-image-violet.png" width="130px" alt="">
+                <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
+                <div class="nome"><h2>Orégano</h2><h6>100g</h6></div>
+                <div class="preço"><h3>R$18,50</h3></div>
+            </div>
+            
+        </div>
+    </div> -->
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
