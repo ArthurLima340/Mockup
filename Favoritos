@@ -12,14 +12,8 @@
 
 <body>
     <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-
+       
+        /* Imagem de fundo */
         body {
             padding: 0;
             margin: 0;
@@ -31,7 +25,7 @@
             width: 100%;
         }
 
-
+        /***************************************** Cabeçalho *****************************************/
         header {
             background-color: brown;
             width: 100%;
@@ -42,26 +36,26 @@
             z-index: 1;
         }
 
-
+        /* Manter as coisas no lugar certo */
         .element-header {
             width: 100%;
             display: flex;
             align-items: center;
         }
 
-
+        /* Manter a imagem de fundo no lugar certo */
         .element-header img {
             margin: 0px 0px -5px 5px;
             outline: none;
         }
 
-
+        /* Texto "buscar" */
         .top-buscar {
             display: flex;
             align-items: center;
         }
 
-
+        /* Lupa */
         .btn-lupa-top {
             border: 0;
             position: relative;
@@ -70,7 +64,7 @@
             background: transparent;
         }
 
-
+        /* X da barra de pesquisa */
         .btn-x-top {
             background: transparent;
             font-size: larger;
@@ -82,7 +76,7 @@
             border: 0;
         }
 
-
+        /* Barra de pesquisa */
         .btn-texto {
             padding: 6px;
             width: 250px;
@@ -93,6 +87,7 @@
             padding-left: 35px;
             padding-right: 35px;
         }
+        /* Botão de filtrar */
         .filtro {
             color: white;
             background-color: darkred;
@@ -101,10 +96,12 @@
             display: flex;
             align-items: center;
         }
+         /* Posição da bolsa */
         .img- {
             position: relative;
             left: 57%;
         }
+        /* Linhas de separação dos produtos */
         .produto {
             width: 410px;
             height: 150px;
@@ -113,20 +110,24 @@
             padding: 15px;
             background-color: rgba(0, 0, 0, 0.158); 
         }
+        /* Criar colunas */
         .all{
             display: flex;
             margin-top: 10px;
             justify-content: center;
         }
+        /* Titulo "Meus favoritos" */
         .favoritos{
             color: rgb(255, 30, 0);
             margin-left: 60px;
         }
+        /* Corações */
         .favs{
             position: relative;
             left: 250px;
             background-color: transparent;
         }
+        /* Corações */
         .nome{
             color: white;
             position: relative;
@@ -134,19 +135,17 @@
             bottom: 150px;
             display: flex;
         }
+        /* Valor */
         .preço{
             color: chartreuse;
             position: relative;
             bottom: 180px;
             left: 140px;
         }
-        .nome h6{
-            position: relative;
-            top: 10px;
-            color: rgb(116, 126, 126);
-        }
+        
     </style>
     <Header>
+        <!-- Cabeçalho -->
         <div class="element-header">
             <a href=""><img src="logo.png" width="55px" alt=""></a>
             <form class="top-buscar" action="">
@@ -164,6 +163,7 @@
     <div class="favoritos"><h2>Meus favoritos</h2></div>
     <div class="all">
         <div>
+            <!-- Primeira coluna -->
             <div class="produto">
                 <img src="oregano.jfif" width="130px" alt="">
                 <button class="favs"><img  src="icons8-coração-blanco.png" width="30px" alt=""></button> 
@@ -184,6 +184,7 @@
             </div>
             
         </div>
+        <!-- Segunda coluna -->
         <div>
             <div class="produto">
                 <img src="pimenta dedo de moça.jpg" width="130px" alt="">
@@ -199,6 +200,7 @@
             </div>
             
         </div>
+        <!-- Terceira coluna -->
         <div>
             <div class="produto">
                 <img src="pimenta do reino.webp" width="130px" alt="">
